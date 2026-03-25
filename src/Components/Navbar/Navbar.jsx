@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from './Link';
+import { CircleX, MenuIcon } from 'lucide-react';
 
 const navData = [
     {
@@ -30,16 +31,31 @@ const navData = [
 ];
 
 const Navbar = () => {
+
+    const [open, setOpen] = useState(false);
+
+    const links = navData.map((route) => <Link key={route.id} route={route} ></Link>)
+
     return (
-        <nav className='mt-5'>
-            <ul className='flex ml-10'>
+        <nav className='mt-5 flex justify-between mx-8'>
+
+            <span className='flex ' onClick={() => setOpen(!open)}>
                 {
-                    navData.map((route) => <Link
-                        key={route.id}
-                        route={route}
-                    ></Link>)
+                    open ? <CircleX className='md:hidden' /> : <MenuIcon className='md:hidden'></MenuIcon>
                 }
+                <ul className={`md:hidden gap-5 duration-1000 rounded p-5 absolute bg-white text-black
+                   ${open ? "top-8" : '-top-40'}
+                    `}>
+                    {links}
+                </ul>
+                <h3 className='ml-4'>My navbar</h3>
+            </span>
+
+
+            <ul className='md:flex hidden ml-10 '>
+                {links}
             </ul>
+            <button>Sign in </button>
         </nav>
     );
 };

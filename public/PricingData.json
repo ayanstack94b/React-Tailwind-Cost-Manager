@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Basic",
+    "price": 999,
+    "duration": "1 Month",
+    "description": "Simple access for beginners.",
+    "features": [
+      "Access to gym equipment",
+      "Locker facility",
+      "1 fitness assessment",
+      "Access to cardio section",
+      "Basic workout guidance",
+      "Flexible gym hours"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Standard",
+    "price": 2499,
+    "duration": "3 Months",
+    "description": "Balanced plan for regular training.",
+    "features": [
+      "Access to all equipment",
+      "Locker and shower facility",
+      "Diet guidance",
+      "Group workout sessions",
+      "2 fitness assessments",
+      "Beginner to intermediate workout plans",
+      "Priority support at gym desk"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Premium",
+    "price": 4999,
+    "duration": "6 Months",
+    "description": "For consistent progress and better results.",
+    "features": [
+      "All equipment access",
+      "Personal trainer (weekly)",
+      "Custom diet plan",
+      "Progress tracking",
+      "Unlimited fitness assessments",
+      "Advanced workout programs",
+      "Supplement guidance",
+      "Priority access to new equipment"
+    ]
+  }
+]
