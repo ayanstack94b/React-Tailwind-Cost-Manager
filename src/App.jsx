@@ -2,6 +2,7 @@ import { Suspense } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import PricingOptions from './Components/PricingOptions/PricingOptions'
+import Footer from './Components/Footer/Footer'
 
 const pricingPromise = fetch('PricingData.json').then((res) => res.json())
 
@@ -21,6 +22,8 @@ function App() {
           <PricingOptions pricingPromise={pricingPromise}></PricingOptions>
         </Suspense>
       </main>
+      {/* this is footer */}
+      <Footer></Footer>
     </>
   )
 }

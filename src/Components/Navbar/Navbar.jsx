@@ -37,7 +37,7 @@ const Navbar = () => {
     const links = navData.map((route) => <Link key={route.id} route={route} ></Link>)
 
     return (
-        <nav className='mt-5 flex justify-between mx-8'>
+        <nav className=' flex justify-between  bg-gray-900 p-5 w-full'>
 
             <span className='flex ' onClick={() => setOpen(!open)}>
                 {
@@ -56,7 +56,7 @@ const Navbar = () => {
             <ul className='md:flex hidden font-bold text-xl ml-10 '>
                 {links}
             </ul>
-            <button className='btn bg-gray-400 text-black font-bold duration-500 py-1 px-8 hover:bg-gray-700 hover:text-white'>Sign in </button>
+            <button className='btn  bg-gray-400 text-black font-bold duration-500 md:py-1 md:px-8 hover:bg-gray-700 hover:text-white'>Sign in </button>
         </nav>
     );
 };
