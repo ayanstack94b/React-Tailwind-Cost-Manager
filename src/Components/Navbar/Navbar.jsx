@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from './Link';
-import { CircleX, MenuIcon } from 'lucide-react';
+import { CircleX, Dumbbell, MenuIcon } from 'lucide-react';
 
 const navData = [
     {
@@ -43,19 +43,20 @@ const Navbar = () => {
                 {
                     open ? <CircleX className='md:hidden' /> : <MenuIcon className='md:hidden'></MenuIcon>
                 }
-                <ul className={`md:hidden gap-5 duration-1000 rounded p-5 absolute bg-white text-black
-                   ${open ? "top-8" : '-top-40'}
+                <ul className={`md:hidden gap-5 duration-1000 rounded p-5 absolute bg-gray-400 text-white font-bold
+                   ${open ? "top-12" : '-top-40'}
                     `}>
                     {links}
                 </ul>
-                <h3 className='ml-4'>My navbar</h3>
+                <Dumbbell size={35} />
+                <h3 className='ml-4 font-bold text-xl md:text-3xl'>Beast fitness</h3>
             </span>
 
 
-            <ul className='md:flex hidden ml-10 '>
+            <ul className='md:flex hidden font-bold text-xl ml-10 '>
                 {links}
             </ul>
-            <button>Sign in </button>
+            <button className='btn bg-gray-400 text-black font-bold duration-500 py-1 px-8 hover:bg-gray-700 hover:text-white'>Sign in </button>
         </nav>
     );
 };
