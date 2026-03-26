@@ -18,7 +18,7 @@ const Hero = () => {
                     <p className="mb-5">
                         Build your body and mind with Beast Fitness.
                     </p>
-                    <button className="btn btn-primary">Join Now</button>
+                    <button className='btn  bg-gray-400 text-black font-bold duration-500 md:py-1 md:px-8 hover:bg-gray-700 hover:text-white'>Join Now </button>
                 </div>
             </div>
         </div>
